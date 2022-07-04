@@ -1,0 +1,31 @@
+// Color palette
+$color-background-light: #f8f8f7;
+$color-background-dark: #1d1d1d;
+$color-accent-dim: #fbe0dc;
+$color-accent-rich: #ff868e;
+$color-component-violet: #b4b7ff;
+$color-component-green: #97eab9;
+$color-component-yellow: #ffd280;
+$color-component-white: #ffffff;
+$color-component-black: #000000;
+
+// Text colors
+$color-text-dark: #1d1d1d;
+$color-text-normal: #8c8c8c;
+$color-text-light: #ffffff;
+
+//Fonts
+$font-main: 'Jost', sans-serif;
+$font-weight-major: 500;
+$font-weight-minor: 400;
+$font-size-major: 36px;
+$font-size-normal: 20px;
+$font-size-minor: 16px;
+
+// Media queries
+$mobile: 375px;
+$tablet: 768px;
+$desktop: 1440px;
+
+// Spacing
+$spacing-major: 20px;

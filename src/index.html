@@ -3,12 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <meta
+      name="description"
+      content="PetsPaw - made by Tymoshchuk Mykola for front-end intern test"
+    />
+    <title>PetsPaw</title>
+
+    <!-- Styles -->
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icon -->
+    <link rel="shortcut icon" href="images/label.svg" type="image/svg" />
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <div class="container">
+      <include src="./partials/header.html"></include>
+      <include src="./partials/interactive-bar.html"></include>
+      <include src="./partials/main.html"></include>
+    </div>
+
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
