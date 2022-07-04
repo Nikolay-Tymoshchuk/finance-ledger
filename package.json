@@ -1,21 +1,21 @@
 {
-  "name": "parcel-project-template",
+  "name": "MacPaw-FEI-test",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://goitacademy.github.io/parcel-project-template",
+  "homepage": "https://nikolay-tymoshchuk.github.io/mp-fei-test/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /mp-fei-test/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/Nikolay-Tymoshchuk/mp-fei-test.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Nikolay Tymoshchuk <saintnikfreak@gmal.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/Nikolay-Tymoshchuk/mp-fei-test/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
