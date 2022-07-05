@@ -1,1 +1,56 @@
-<section></section>
+<section class="interbar">
+  <label for="#search-breeds" class="interbar__label">
+    <input
+      class="interbar__input"
+      type="text"
+      name="search"
+      id="search-breeds"
+      placeholder="Search for breeds by name"
+    />
+    <button
+      type="button"
+      class="interbar__search-btn"
+      aria-label="searching by breeds"
+    >
+      <svg>
+        <use xlink:href="./images/sprite.svg#search-20"></use>
+      </svg>
+    </button>
+  </label>
+
+  <ul class="interbar__collection-list">
+    <li class="interbar__collection-item">
+      <button
+        type="button"
+        class="interbar__collection-button"
+        aria-label="go to like collection"
+      >
+        <svg>
+          <use xlink:href="./images/sprite.svg#like-30"></use>
+        </svg>
+      </button>
+    </li>
+    <li class="interbar__collection-item">
+      <button
+        type="button"
+        class="interbar__collection-button"
+        aria-label="go to favorite collection"
+      >
+        <svg>
+          <use xlink:href="./images/sprite.svg#fav-30"></use>
+        </svg>
+      </button>
+    </li>
+    <li class="interbar__collection-item">
+      <button
+        type="button"
+        class="interbar__collection-button"
+        aria-label="go to dislike collection"
+      >
+        <svg>
+          <use xlink:href="./images/sprite.svg#dislike-30"></use>
+        </svg>
+      </button>
+    </li>
+  </ul>
+</section>

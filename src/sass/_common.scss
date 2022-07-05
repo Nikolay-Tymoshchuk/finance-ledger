@@ -61,25 +61,25 @@ button {
 .container {
   width: 100%;
   padding: $spacing-major;
-  margin-left: auto;
-  margin-right: auto;
 
   @media screen and (min-width: $mobile) {
     width: 335px;
   }
 
   @media screen and (min-width: $tablet) {
-    width: 736px;
+    width: 708px;
   }
 
   @media screen and (min-width: $desktop) {
-    width: 668px;
-    padding: calc($spacing-major * 1.5);
+    width: 680px;
+    // padding: calc($spacing-major * 1.5);
   }
 }
 
 body > .container {
   @media screen and (min-width: $desktop) {
+    margin-left: auto;
+    margin-right: auto;
     height: 100%;
     position: relative;
     display: grid;
