@@ -1,5 +1,5 @@
 <div class="container">
-  <section class="section__voling">
+  <section class="section__voting">
     <div class="section-bar">
       <button type="button" aria-label="back button" class="button__back">
         <svg>
@@ -8,36 +8,61 @@
       </button>
       <h2 class="section__title">voting</h2>
     </div>
-    <div class="section__main-content">
-      <ul class="voting__button-list">
-        <li class="voting__button"></li>
-        <li class="voting__button"></li>
-        <li class="voting__button"></li>
-      </ul>
-    </div>
+    <div class="section__main-content"></div>
+    <ul class="voting__button-list">
+      <li class="voting__button-box">
+        <button type="button" class="voting__button" aria-label="add to likes">
+          <svg>
+            <use xlink:href="./images/sprite.svg#like-30"></use>
+          </svg>
+        </button>
+      </li>
+      <li class="voting__button-box">
+        <button
+          type="button"
+          class="voting__button"
+          aria-label="add to favorites"
+        >
+          <svg>
+            <use xlink:href="./images/sprite.svg#fav-30"></use>
+          </svg>
+        </button>
+      </li>
+      <li class="voting__button-box">
+        <button
+          type="button"
+          class="voting__button"
+          aria-label="add to dislikes"
+        >
+          <svg>
+            <use xlink:href="./images/sprite.svg#dislike-30"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+    <ul class="action-log__list">
+      <li class="action-log__list-item">
+        <div class="action-log__item-data">
+          <span class="action-log__time"></span>
+          <span class="action-log__info"></span>
+          <span class="action-log__place"></span>
+        </div>
+      </li>
+      <li class="action-log__list-item">
+        <div class="action-log__item-data">
+          <span class="action-log__time"></span>
+        </div>
+      </li>
+      <li class="action-log__list-item">
+        <div class="action-log__item-data">
+          <span class="action-log__time"></span>
+        </div>
+      </li>
+      <li class="action-log__list-item">
+        <div class="action-log__item-data">
+          <span class="action-log__time"></span>
+        </div>
+      </li>
+    </ul>
   </section>
-  <ul class="action-log__list">
-    <li class="action-log__list-item">
-      <div class="action-log__item-data">
-        <span class="action-log__time"></span>
-        <span class="action-log__info"></span>
-        <span class="action-log__place"></span>
-      </div>
-    </li>
-    <li class="action-log__list-item">
-      <div class="action-log__item-data">
-        <span class="action-log__time"></span>
-      </div>
-    </li>
-    <li class="action-log__list-item">
-      <div class="action-log__item-data">
-        <span class="action-log__time"></span>
-      </div>
-    </li>
-    <li class="action-log__list-item">
-      <div class="action-log__item-data">
-        <span class="action-log__time"></span>
-      </div>
-    </li>
-  </ul>
 </div>

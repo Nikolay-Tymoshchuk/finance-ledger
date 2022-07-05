@@ -1,0 +1,57 @@
+.section__voting {
+  & .section__main-content {
+    outline: 1px solid $color-accent-dim;
+    height: 340px;
+    border-radius: $spacing-major;
+    overflow: hidden;
+    position: relative;
+    background-color: $color-accent-dim;
+  }
+}
+
+.voting__button-list {
+  position: relative;
+  z-index: 200;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: repeat(3, 1fr);
+  width: 256px;
+  height: 88px;
+  border: 0.2 * $spacing-major solid $color-component-white;
+  border-radius: $spacing-major;
+  column-gap: 0.2 * $spacing-major;
+  background-color: $color-component-white;
+}
+
+.voting__button-box {
+  & > .voting__button {
+    background-color: $color-accent-rich;
+  }
+  &:first-child > .voting__button {
+    background-color: $color-component-green;
+  }
+
+  &:last-child > .voting__button {
+    background-color: $color-component-yellow;
+  }
+}
+
+.voting__button {
+  padding: 1.25 * $spacing-major;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:hover > svg {
+    fill: $color-accent-rich;
+  }
+  > svg {
+    aspect-ratio: 1/1;
+    width: 1.5 * $spacing-major;
+    fill: $color-component-white;
+  }
+}

@@ -90,6 +90,11 @@ body > .container {
   }
 }
 
+main > .container {
+  background-color: $color-component-white;
+  border-radius: $spacing-major;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
