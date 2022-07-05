@@ -1,4 +1,7 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
-@import './variables';
-@import './common';
-@import '_main.scss';
+@import 'variables';
+@import 'common';
+@import './header/header';
+@import './buttons/buttons';
+@import 'main.scss';
+@import 'main-overlay.scss';

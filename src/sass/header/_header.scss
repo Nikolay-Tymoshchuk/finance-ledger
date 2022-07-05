@@ -1,0 +1,19 @@
+@import 'navigation';
+
+.header__logo {
+  display: inline-block;
+  margin-bottom: calc($spacing-major * 4);
+}
+
+.header__title {
+  font-weight: $font-weight-major;
+  font-size: 44px;
+  line-height: 1.32;
+  margin-bottom: calc($spacing-major * 0.5);
+  color: $color-text-dark;
+}
+
+.header__text {
+  line-height: 1.45;
+  margin-bottom: calc($spacing-major * 3);
+}

@@ -4,16 +4,17 @@ html {
 
 body {
   background-color: $color-background-light;
-  text-align: center;
+  // text-align: center;
 
   font-family: $font-main;
   font-size: $font-size-normal;
   font-weight: $font-weight-minor;
   line-height: 1.5;
   overflow-x: hidden;
-  //   margin-right: calc(-1 * (100vw - 100%));
-  //   scrollbar-gutter: stable both-edges;
-  //   height: 100vh;
+  margin-right: calc(-1 * (100vw - 100%));
+  scrollbar-gutter: stable both-edges;
+  height: 100vh;
+  color: $color-text-normal;
 }
 
 img {
@@ -46,6 +47,17 @@ ul {
   list-style: none;
 }
 
+button {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
 .container {
   width: 100%;
   padding: $spacing-major;
@@ -68,11 +80,13 @@ ul {
 
 body > .container {
   @media screen and (min-width: $desktop) {
+    height: 100%;
+    position: relative;
     display: grid;
     grid-template-columns: 446px 680px;
     column-gap: 119px;
-    width: 1380px;
-    padding: 30px 30px 30px 135px;
+    width: 1243px;
+    padding: 30px 0 30px;
   }
 }
 

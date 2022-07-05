@@ -1,6 +1,6 @@
 <header>
-  <a href="index.html" type="_blank">
-    <svg width="106" height="24" aria-label="Переключатель мобильного меню">
+  <a class="header__logo" href="index.html" type="_blank">
+    <svg width="106" height="24">
       <use class="header__logo" href="./images/sprite.svg#logo"></use>
     </svg>
   </a>
@@ -12,27 +12,47 @@
       <h2 class="navigation_title">Lets start using The Cat API</h2>
       <ul class="navigation__list">
         <li class="navigation__item">
-          <div>
-            <img
-              srcset="
-                ./images/png/vote-table138@1x.png 138w,
-                ./images/png/vote-table138@2x.png 276w
-              "
-              src="./images/png/vote-table138@1x.png"
-              alt="vote table"
-              width="138"
-            />
-            <button
-              type="button"
-              class="button-main"
-              aria-label="open voting section"
-            >
-              voting
-            </button>
-          </div>
+          <button
+            type="button"
+            class="navigation__button-main"
+            aria-label="open voting section"
+          >
+            <div class="navigation__image-box">
+              <img
+                srcset="
+                  ./images/png/vote-table138@1x.png 138w,
+                  ./images/png/vote-table138@2x.png 276w
+                "
+                src="./images/png/vote-table138@1x.png"
+                alt="vote table"
+                width="138"
+              />
+            </div>
+            <span class="navigation__button-label"> voting </span>
+          </button>
         </li>
         <li class="navigation__item">
-          <div>
+          <button
+            type="button"
+            class="navigation__button-main"
+            aria-label="open breeds section"
+          >
+            <div class="navigation__image-box">
+              <img
+                srcset="
+                  ./images/png/pet-breeds138@1x.png 138w,
+                  ./images/png/pet-breeds138@2x.png 276w
+                "
+                src="./images/png/pet-breeds138@1x.png"
+                alt="pet breeds"
+                width="138"
+              />
+            </div>
+            <span class="navigation__button-label"> breeds </span>
+          </button>
+        </li>
+        <!-- <li class="navigation__item">
+          <div class="navigation__image-box">
             <img
               srcset="
                 ./images/png/pet-breeds138@1x.png 138w,
@@ -42,34 +62,34 @@
               alt="pet breeds"
               width="138"
             />
-            <button
-              type="button"
-              class="button-main"
-              aria-label="open breeds section"
-            >
-              breeds
-            </button>
           </div>
-        </li>
+          <button
+            type="button"
+            class="button-main"
+            aria-label="open breeds section"
+          >
+            breeds
+          </button>
+        </li> -->
         <li class="navigation__item">
-          <div>
-            <img
-              srcset="
-                ./images/png/images-search138@1x.png 138w,
-                ./images/png/images-search138@2x.png 276w
-              "
-              src="./images/png/images-search138@1x.png"
-              alt="image search"
-              width="138"
-            />
-            <button
-              type="button"
-              class="button-main"
-              aria-label="open gallery section"
-            >
-              gallery
-            </button>
-          </div>
+          <button
+            type="button"
+            class="navigation__button-main"
+            aria-label="open gallery section"
+          >
+            <div class="navigation__image-box">
+              <img
+                srcset="
+                  ./images/png/images-search138@1x.png 138w,
+                  ./images/png/images-search138@2x.png 276w
+                "
+                src="./images/png/images-search138@1x.png"
+                alt="image search"
+                width="138"
+              />
+            </div>
+            <span class="navigation__button-label"> gallery </span>
+          </button>
         </li>
       </ul>
     </nav>
