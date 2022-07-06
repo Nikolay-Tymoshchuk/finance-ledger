@@ -1,10 +1,14 @@
+$button-list-height: 88px;
+
 .section__voting {
+  height: 100%;
   & .section__main-content {
     outline: 1px solid $color-accent-dim;
     height: 340px;
     border-radius: $spacing-major;
     overflow: hidden;
     position: relative;
+
     background-color: $color-accent-dim;
   }
 }
@@ -19,39 +23,96 @@
   overflow: hidden;
   grid-template-columns: repeat(3, 1fr);
   width: 256px;
-  height: 88px;
+  height: $button-list-height;
   border: 0.2 * $spacing-major solid $color-component-white;
   border-radius: $spacing-major;
   column-gap: 0.2 * $spacing-major;
   background-color: $color-component-white;
 }
 
-.voting__button-box {
-  & > .voting__button {
-    background-color: $color-accent-rich;
-  }
-  &:first-child > .voting__button {
-    background-color: $color-component-green;
-  }
-
-  &:last-child > .voting__button {
-    background-color: $color-component-yellow;
-  }
-}
-
-.voting__button {
+@mixin flexible-opacity($color, $alpha: 0.3) {
   padding: 1.25 * $spacing-major;
-
+  background-color: $color;
   &:hover {
-    opacity: 0.5;
+    background-color: rgba($color, $alpha);
   }
 
-  &:hover > svg {
-    fill: $color-accent-rich;
-  }
   > svg {
     aspect-ratio: 1/1;
     width: 1.5 * $spacing-major;
     fill: $color-component-white;
   }
+  &:hover > svg {
+    fill: $color;
+  }
+}
+
+.voting__button-box {
+  & > .voting__button {
+    $current-color: $color-accent-rich;
+
+    @include flexible-opacity($current-color);
+  }
+  &:first-child > .voting__button {
+    $current-color: $color-component-green;
+    @include flexible-opacity($current-color);
+  }
+
+  &:last-child > .voting__button {
+    $current-color: $color-component-yellow;
+    @include flexible-opacity($current-color);
+  }
+}
+
+// Depends from button list height
+.action-log__list {
+  &::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+  position: relative;
+
+  // 454px => sum of: section-bar+section__main-content+0.5voting__button-list+margins
+  height: calc(100% - 454px);
+  overflow-y: auto;
+  top: -$button-list-height / 2 + 0.5 * $spacing-major;
+  font-size: $font-size-minor;
+  border-bottom-left-radius: $spacing-major;
+  border-bottom-right-radius: $spacing-major;
+}
+
+.action-log__list-item {
+  background-color: $color-background-light;
+  border-radius: 0.5 * $spacing-major;
+  padding: 0.75 * $spacing-major;
+  padding-right: $spacing-major;
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 0.5 * $spacing-major;
+  }
+}
+
+.action-log__time {
+  padding: 3px 0.5 * $spacing-major;
+  background-color: $color-component-white;
+  border-radius: 0.25 * $spacing-major;
+  color: $color-text-dark;
+}
+
+.action-log__info {
+  margin-left: $spacing-major;
+  margin-right: auto;
+}
+
+.action-log__id {
+  font-weight: $font-weight-major;
+  color: $color-text-dark;
+}
+
+.action-log__place {
+  aspect-ratio: 1/1;
+  width: $spacing-major;
+  outline: 1px solid $color-accent-dim;
 }

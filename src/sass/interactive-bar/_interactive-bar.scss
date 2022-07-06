@@ -22,7 +22,11 @@
 
   line-height: 1.5;
 
-  color: #8c8c8c;
+  color: $color-text-dark;
+
+  &::placeholder {
+    color: $color-text-normal;
+  }
 
   &:focus {
     outline: none;

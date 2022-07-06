@@ -93,6 +93,8 @@ body > .container {
 main > .container {
   background-color: $color-component-white;
   border-radius: $spacing-major;
+  height: calc(100% - 3 * $spacing-major - 0.5 * $spacing-major);
+  // position: relative;
 }
 
 .visually-hidden {
