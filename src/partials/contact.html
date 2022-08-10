@@ -1,0 +1,46 @@
+<section id="contact" class="section section--binary section--contact">
+  <div class="section__image-box">
+    <picture class="section__face">
+      <source
+        srcset="images/home/contact.webp 1x, images/home/contact@2x.webp 2x"
+        type="image/webp"
+      />
+      <source
+        srcset="images/home/contact.jpg 1x, images/home/contact@2x.jpg 2x"
+        type="image/jpeg"
+      />
+      <img src="images/home/contact.jpg" alt="contact us anytime" />
+    </picture>
+  </div>
+  <form
+    data-form
+    class="section__side-content section__side-content--form"
+    name="contact"
+    method="POST"
+    data-netlify="true"
+  >
+    <h2 class="section-title section-title--form">Request Callback</h2>
+    <div class="form__data-box form__data-box--name">
+      <input data-input="name" class="form__text-input" type="text" name="name" />
+      <label for="name" class="form__label"> Enter your name </label>
+    </div>
+    <div class="form__data-box form__data-box--email">
+      <input
+        data-input="email"
+        class="form__text-input"
+        type="text"
+        name="email"
+        required="required"
+      />
+      <label for="email" class="form__label"> Enter email* </label>
+      <div data-error class="error-message"></div>
+    </div>
+    <button
+      class="button-main button-main--form"
+      type="submit"
+      aria-label="sending contacts button"
+    >
+      Send
+    </button>
+  </form>
+</section>

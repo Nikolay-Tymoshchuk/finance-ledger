@@ -1,0 +1,22 @@
+.button-additional {
+  background-color: inherit;
+  padding: 9px 35px;
+  border: 1px solid $color-main-light;
+
+  &:hover {
+    color: $color-accent;
+    background-color: $color-main-light;
+  }
+
+  &:hover use {
+    transition: 200ms ease-in-out;
+    fill: $color-accent;
+  }
+
+  .section__side-content--blog &:hover {
+    color: $color-additional;
+  }
+  .section__side-content--blog &:hover use {
+    fill: $color-additional;
+  }
+}

@@ -1,23 +1,24 @@
 {
-  "name": "MacPaw-FEI-test",
+  "name": "finance-ledger",
   "version": "1.0.0",
-  "description": "",
+  "description": "finance-ledger test project",
   "main": "index.js",
-  "homepage": "https://nikolay-tymoshchuk.github.io/mp-fei-test/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /mp-fei-test/"
+    "build": "parcel build src/*.html --public-url /finance-ledger/",
+    "predeploy": "npm run build",
+    "deploy": "netlify deploy -p"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Nikolay-Tymoshchuk/mp-fei-test.git"
+    "url": "git+https://github.com/Nikolay-Tymoshchuk/finance-ledger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nikolay-Tymoshchuk/finance-ledger/issues"
   },
   "keywords": [],
   "author": "Nikolay Tymoshchuk <saintnikfreak@gmal.com>",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Nikolay-Tymoshchuk/mp-fei-test/issues"
-  },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
     "parcel-bundler": "^1.12.5",
@@ -25,5 +26,11 @@
     "parcel-plugin-nuke-dist": "^1.0.1",
     "posthtml-include": "^1.7.4"
   },
-  "browserslist": "> 0.5%, last 2 versions, not dead"
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "lightbox2": "^2.11.3",
+    "lodash.throttle": "^4.1.1",
+    "notiflix": "^3.2.5"
+  }
 }

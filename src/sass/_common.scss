@@ -3,18 +3,29 @@ html {
 }
 
 body {
-  background-color: $color-background-light;
-  // text-align: center;
+  color: $color-main-light;
+  background-color: #02050e;
+  text-align: center;
 
   font-family: $font-main;
-  font-size: $font-size-normal;
-  font-weight: $font-weight-minor;
-  line-height: 1.5;
+  font-weight: $font-weight-major;
+  font-size: $font-size-major-mobile;
+  line-height: 1.6;
+
   overflow-x: hidden;
   margin-right: calc(-1 * (100vw - 100%));
   scrollbar-gutter: stable both-edges;
-  height: 100vh;
-  color: $color-text-normal;
+
+  @media screen and (min-width: $tablet) {
+    font-size: $font-size-major;
+  }
+
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
 }
 
 img {
@@ -26,6 +37,7 @@ img {
 a {
   text-decoration: none;
   font-style: normal;
+  color: $color-main-light;
 }
 
 h1,
@@ -59,55 +71,29 @@ button {
 }
 
 .container {
+  background-color: $color-main-light;
+  margin: 0 auto;
   width: 100%;
-  padding: $spacing-major;
 
   @media screen and (min-width: $mobile) {
-    width: 335px;
+    width: $mobile;
   }
 
   @media screen and (min-width: $tablet) {
-    width: 708px;
+    width: $tablet;
   }
 
   @media screen and (min-width: $desktop) {
-    width: 680px;
-    // padding: calc($spacing-major * 1.5);
+    width: $desktop;
   }
 }
+.container--centred-content {
+  padding: 0 4 * $spacing-major;
 
-body > .container {
+  @media screen and (min-width: $tablet) {
+    padding: 0 32px;
+  }
   @media screen and (min-width: $desktop) {
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-    position: relative;
-    display: grid;
-    grid-template-columns: 446px 680px;
-    column-gap: 119px;
-    width: 1243px;
-    padding: 30px 0 30px;
+    padding: 0 28px;
   }
-}
-
-main > .container {
-  background-color: $color-component-white;
-  border-radius: $spacing-major;
-  height: calc(100% - 3 * $spacing-major - 0.5 * $spacing-major);
-  // position: relative;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-  transform: scale(0);
 }

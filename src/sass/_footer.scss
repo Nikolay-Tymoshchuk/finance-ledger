@@ -1,0 +1,17 @@
+.footer {
+  background-color: $color-main-dark;
+  padding: 4 * $spacing-major;
+}
+
+.links-list__item {
+  & use {
+    transition: 250ms ease fill;
+    fill: #fff;
+  }
+
+  &:hover {
+    & use {
+      fill: $color-accent;
+    }
+  }
+}

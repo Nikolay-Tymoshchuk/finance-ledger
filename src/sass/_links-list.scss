@@ -1,0 +1,20 @@
+.links-list {
+  display: flex;
+  gap: 5 * $spacing-major;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 8px;
+  line-height: 0;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 6px;
+  }
+}
+
+.links-list.links-list--team {
+  margin: 0;
+  @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
+    gap: 8px;
+  }
+}

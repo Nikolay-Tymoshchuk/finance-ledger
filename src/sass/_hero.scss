@@ -1,0 +1,53 @@
+@mixin gradient-bg($color: rgba(0, 0, 0, 0.4)) {
+  background-image: linear-gradient(to right, $color, $color), url('../images/home/showcase.jpg');
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, $color, $color),
+      url('../images/home/showcase@2x.jpg');
+  }
+}
+
+.section-hero {
+  @include gradient-bg();
+  background-color: $color-main-dark;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  padding: 142px 40px 96px;
+
+  line-height: 1.27;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 405px;
+    padding-bottom: 410px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 280px;
+    padding-bottom: 285px;
+  }
+}
+
+.hero__title {
+  font-size: 52px;
+  font-weight: $font-weight-minor;
+
+  margin-bottom: 4 * $spacing-major;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 55px;
+    line-height: 1.2;
+    margin-bottom: 5 * $spacing-major;
+  }
+}
+
+.hero__subtitle {
+  font-size: 22px;
+  font-weight: $font-weight-major;
+  line-height: 1.67;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 6 * $spacing-major;
+  }
+}

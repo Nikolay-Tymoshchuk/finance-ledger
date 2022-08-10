@@ -1,1 +1,39 @@
+.button-main {
+  color: $color-main-light;
+  background-color: $color-accent;
 
+  padding: 10px 36px;
+
+  border-radius: $spacing-major;
+  justify-content: center;
+
+  font-family: $font-main;
+  font-weight: $font-weight-major;
+  font-size: $font-size-major-mobile;
+  line-height: 1.62;
+
+  transition: 200ms ease-in-out;
+
+  &--form {
+    width: 100%;
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.button-main__icon {
+  display: none;
+  aspect-ratio: 1/2;
+  width: 9px;
+  margin-right: 4px;
+
+  & > use {
+    fill: $color-main-light;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+}

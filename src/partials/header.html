@@ -1,77 +1,33 @@
-<header>
-  <a class="header__logo" href="index.html" type="_blank">
-    <svg width="106" height="24">
-      <use class="header__logo" href="./images/sprite.svg#logo"></use>
+<header data-block="header" class="header">
+  <!-- Logo -->
+
+  <a class="main-logo" href="/" type="_blank">
+    <svg width="40" height="35">
+      <use href="./images/sprite.svg#main-logo"></use>
     </svg>
+    <span class="main-logo__text--left">Finance</span>
+    <span>Ledger</span>
   </a>
 
-  <div class="header__main-block">
-    <h1 class="header__title">Hi intern!</h1>
-    <p class="header__text">Welcome to MI 2022 Front-end test</p>
-    <nav class="navigation">
-      <p class="navigation_title">Lets start using The Cat API</p>
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <button
-            type="button"
-            class="navigation__button-main"
-            aria-label="open voting section"
-          >
-            <div class="navigation__image-box">
-              <img
-                srcset="
-                  ./images/png/vote-table138@1x.png 138w,
-                  ./images/png/vote-table138@2x.png 276w
-                "
-                src="./images/png/vote-table138@1x.png"
-                alt="vote table"
-                width="138"
-              />
-            </div>
-            <span class="navigation__button-label"> voting </span>
-          </button>
-        </li>
-        <li class="navigation__item">
-          <button
-            type="button"
-            class="navigation__button-main"
-            aria-label="open breeds section"
-          >
-            <div class="navigation__image-box">
-              <img
-                srcset="
-                  ./images/png/pet-breeds138@1x.png 138w,
-                  ./images/png/pet-breeds138@2x.png 276w
-                "
-                src="./images/png/pet-breeds138@1x.png"
-                alt="pet breeds"
-                width="138"
-              />
-            </div>
-            <span class="navigation__button-label"> breeds </span>
-          </button>
-        </li>
-        <li class="navigation__item">
-          <button
-            type="button"
-            class="navigation__button-main"
-            aria-label="open gallery section"
-          >
-            <div class="navigation__image-box">
-              <img
-                srcset="
-                  ./images/png/images-search138@1x.png 138w,
-                  ./images/png/images-search138@2x.png 276w
-                "
-                src="./images/png/images-search138@1x.png"
-                alt="image search"
-                width="138"
-              />
-            </div>
-            <span class="navigation__button-label"> gallery </span>
-          </button>
-        </li>
-      </ul>
-    </nav>
-  </div>
+  <!-- Navigation -->
+
+  <nav class="navigation">
+    <ul class="navigation__list">
+      <li class="navigation__list-item">
+        <a data-link="home" class="navigation__link" href="#home">Home</a>
+      </li>
+      <li class="navigation__list-item">
+        <a data-link="about" class="navigation__link" href="#about">About</a>
+      </li>
+      <li class="navigation__list-item">
+        <a data-link="cases" class="navigation__link" href="#cases">Cases</a>
+      </li>
+      <li class="navigation__list-item">
+        <a data-link="blog" class="navigation__link" href="#blog">Blog</a>
+      </li>
+      <li class="navigation__list-item">
+        <a data-link="contact" class="navigation__link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
 </header>

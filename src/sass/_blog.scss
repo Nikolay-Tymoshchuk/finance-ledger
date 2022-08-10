@@ -1,0 +1,14 @@
+.section__side-content--blog {
+  @extend .section__side-content;
+  background-color: $color-additional;
+
+  @media screen and (max-width: calc($tablet - 1px)) {
+    padding-left: 4 * $spacing-major;
+    padding-right: 8 * $spacing-major;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 28px;
+    padding-right: 56px;
+  }
+}

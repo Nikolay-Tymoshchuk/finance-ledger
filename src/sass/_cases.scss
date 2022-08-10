@@ -1,0 +1,7 @@
+.gallery-item--cases {
+  transition: 200ms linear;
+
+  &:hover {
+    filter: opacity(0.8);
+  }
+}
