@@ -18,13 +18,10 @@
     justify-content: space-between;
     align-items: center;
 
-    padding-left: 6 * $spacing-major;
-    padding-right: 4 * $spacing-major;
-  }
-
-  @media screen and (min-width: $tablet) {
-    padding-top: 2 * $spacing-major;
-    padding-bottom: 2 * $spacing-major;
+    padding-top: $spacing-major;
+    padding-bottom: $spacing-major;
+    padding-left: calc(6 * $spacing-major + 2px);
+    padding-right: calc(4 * $spacing-major + 2px);
   }
 }
 
@@ -63,15 +60,22 @@
 }
 
 // ================== Navigation ==================
+.navigation {
+  @media screen and (min-width: $tablet) {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+  }
+}
 
 .navigation__list {
+  height: inherit;
   display: flex;
   justify-content: center;
 }
 
 .navigation__list-item {
   position: relative;
-  padding: 6px;
 
   &:after {
     content: '';
@@ -94,12 +98,20 @@
   }
 
   @media screen and (min-width: $tablet) {
-    padding: 2 * $spacing-major;
+    padding: 0;
   }
+}
 
-  @media screen and (min-width: $desktop) {
-    // padding-top: 7px;
-    // padding-bottom: 7px;
+.navigation__link {
+  display: inline-block;
+  margin: 6px;
+
+  @media screen and (min-width: $tablet) {
+    margin: 0;
+    padding: 3 * $spacing-major 2 * $spacing-major;
+    line-height: 1.5;
+  }
+  @media screen and (min-width: $tablet) {
     padding-left: 4 * $spacing-major;
     padding-right: 4 * $spacing-major;
   }
