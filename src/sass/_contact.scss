@@ -7,6 +7,8 @@
   }
 }
 
+// ================== Form ==================
+
 .section__side-content--form {
   padding-left: 4 * $spacing-major;
   padding-right: 4 * $spacing-major;
@@ -54,10 +56,6 @@
     transform: translateY(-180%);
     transition: transform 250ms ease-in-out;
   }
-
-  // .form__text-input:focus + & {
-
-  // }
 }
 
 .form__text-input {
