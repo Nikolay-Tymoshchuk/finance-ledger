@@ -108,7 +108,9 @@ dist
 # TernJS port file
 .tern-port
 
-.desktop.ini
+# Windows socket file
+.ini
 
 # Local Netlify folder
 .netlify
+
