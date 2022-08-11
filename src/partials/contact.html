@@ -1,4 +1,5 @@
 <section id="contact" class="section section--binary section--contact">
+  <h2 class="visually-hidden">Contact</h2>
   <div class="section__image-box">
     <picture class="section__face">
       <source
@@ -21,7 +22,7 @@
   >
     <h2 class="section-title section-title--form">Request Callback</h2>
     <div class="form__data-box form__data-box--name">
-      <input data-input="name" class="form__text-input" type="text" name="name" />
+      <input data-input="name" class="form__text-input" type="text" name="name" id="name" />
       <label for="name" class="form__label"> Enter your name </label>
     </div>
     <div class="form__data-box form__data-box--email">
@@ -31,6 +32,7 @@
         type="text"
         name="email"
         required="required"
+        id="email"
       />
       <label for="email" class="form__label"> Enter email* </label>
       <div data-error class="error-message"></div>

@@ -3,13 +3,14 @@
   padding: 4 * $spacing-major;
 }
 
-.links-list__item {
+.links-list-footer__link {
   & use {
     transition: 250ms ease fill;
     fill: #fff;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     & use {
       fill: $color-accent;
     }

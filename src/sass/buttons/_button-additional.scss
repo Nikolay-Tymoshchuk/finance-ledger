@@ -3,20 +3,24 @@
   padding: 9px 35px;
   border: 1px solid $color-main-light;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-accent;
     background-color: $color-main-light;
   }
 
-  &:hover use {
+  &:hover use,
+  &:focus use {
     transition: 200ms ease-in-out;
     fill: $color-accent;
   }
 
-  .section__side-content--blog &:hover {
+  .section__side-content--blog &:hover,
+  .section__side-content--blog &:focus {
     color: $color-additional;
   }
-  .section__side-content--blog &:hover use {
+  .section__side-content--blog &:hover use,
+  .section__side-content--blog &:focus use {
     fill: $color-additional;
   }
 }

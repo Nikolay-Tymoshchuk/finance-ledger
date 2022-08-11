@@ -37,3 +37,14 @@ links.forEach(link => {
     });
   });
 });
+
+// Custom focus on team div elements
+const focusedEl = document.querySelectorAll('.team-list-item__link');
+const onBlur = e => e.target.closest('div').classList.remove('focused');
+const onFocus = e => e.target.closest('div').classList.add('focused');
+
+focusedEl.forEach(el => {
+  el.addEventListener('focus', onFocus);
+  el.addEventListener('blur', onBlur);
+  el.addEventListener('click', () => el.blur());
+});

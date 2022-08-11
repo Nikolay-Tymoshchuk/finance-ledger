@@ -19,16 +19,17 @@
     fill: #fff;
   }
 
-  .team-unit:hover & {
+  .team-unit:hover &,
+  .team-unit.focused & {
     opacity: 1;
     pointer-events: auto;
   }
 }
 
-.links-list__item--team:hover {
+.team-list-item__link:hover,
+.team-list-item__link:focus {
   filter: opacity(0.8);
 }
-
 // Unit information
 
 .team-unit {
@@ -63,6 +64,15 @@
   }
   @media screen and (min-width: $desktop) {
     margin-bottom: 4 * $spacing-major;
+  }
+}
+
+.team-unit.focused {
+  transform: scale(1.02);
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.5));
+
+  &::before {
+    opacity: 0.6;
   }
 }
 
